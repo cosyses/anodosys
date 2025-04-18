@@ -1,0 +1,19 @@
+{
+    "system": {
+        "serverNames": [
+            "os"
+        ]
+    },
+    "os": {
+        "sshPortInternal": "22",
+        "imageInteractiveRun": true,
+        "imageInteractiveCommand": "tail",
+        "buildImageMode": "remote",
+        "buildImageEntryPoint": "tini,--,/usr/local/bin/ubuntu.sh",
+        "buildImageCommand": "/usr/local/bin/openssh.sh",
+        "containerExpose": [
+            "<sshPortInternal>"
+        ],
+        "skipPortsAvailable": true
+    }
+}
