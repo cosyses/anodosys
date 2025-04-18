@@ -1,0 +1,10 @@
+{
+    "require": [
+        "../ubuntu.json"
+    ],
+    "global": {
+        "systemName": "ubuntu2404",
+        "ubuntuVersion": "24.04",
+        "openSshVersion": "9.6"
+    }
+}

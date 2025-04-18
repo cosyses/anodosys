@@ -1,0 +1,15 @@
+{
+    "require": [
+        "../os.json"
+    ],
+    "os": {
+        "imageName": "library/ubuntu",
+        "imageTag": "${ubuntuVersion}",
+        "buildImageName": "cosyses/ubuntu",
+        "buildImageTag": "${ubuntuVersion}",
+        "containerInstallDockerScript": "../../../script/docker/software/Ubuntu.sh",
+        "containerInstallDockerParameters": [
+            "--openSshVersion <openSshVersion>"
+        ]
+    }
+}
