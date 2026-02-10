@@ -7,6 +7,7 @@
         "imageTag": "${ubuntuVersion}",
         "buildImageName": "cosyses/ubuntu",
         "buildImageTag": "${ubuntuVersion}",
+        "buildImageEntryPoint": "tini,--,/usr/local/bin/cosyses.sh",
         "containerInstallDockerScript": "../../../script/docker/software/Ubuntu.sh",
         "containerInstallDockerParameters": [
             "--openSshVersion <openSshVersion>"
