@@ -52,6 +52,9 @@ mkdir -p /usr/local/lib/start
 
 cat <<EOF > /usr/local/lib/start/00-cosyes.sh
 #!/usr/bin/env bash
+if [[ -f /usr/local/etc/.anodosys ]]; then
+  source /usr/local/etc/.anodosys
+fi
 if [[ ! -v NO_COSYSES_UPDATE ]]; then
   cosyses update
 fi
@@ -60,6 +63,9 @@ chmod +x /usr/local/lib/start/00-cosyes.sh
 
 cat <<EOF > /usr/local/lib/start/80-ssh.sh
 #!/usr/bin/env bash
+if [[ -f /usr/local/etc/.anodosys ]]; then
+  source /usr/local/etc/.anodosys
+fi
 if [[ ! -v NO_SSH_SERVER ]]; then
   /usr/local/bin/openssh.sh
 fi
@@ -70,6 +76,9 @@ mkdir -p /usr/local/lib/stop
 
 cat <<EOF > /usr/local/lib/stop/80-ssh.sh
 #!/usr/bin/env bash
+if [[ -f /usr/local/etc/.anodosys ]]; then
+  source /usr/local/etc/.anodosys
+fi
 if [[ ! -v NO_SSH_SERVER ]]; then
   /etc/init.d/ssh stop
 fi
