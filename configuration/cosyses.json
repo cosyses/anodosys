@@ -1,0 +1,5 @@
+{
+    "any": {
+        "containerStartedCommand": "/usr/local/bin/started.sh"
+    }
+}
