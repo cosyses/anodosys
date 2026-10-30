@@ -1,4 +1,7 @@
 {
+    "require": [
+        "../cosyses.json"
+    ],
     "system": {
         "serverNames": [
             "os"
@@ -10,7 +13,7 @@
         "imageInteractiveCommand": "tail",
         "buildImageMode": "remote",
         "containerExpose": [
-            "<sshPortInternal>"
+            "{sshPortInternal}"
         ],
         "skipPortsAvailable": true
     }

@@ -1,0 +1,8 @@
+{
+    "require": [
+        "cosyses.local.json"
+    ],
+    "any": {
+        "repositoryUserName": "cosyses"
+    }
+}
