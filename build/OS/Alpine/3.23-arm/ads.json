@@ -1,0 +1,15 @@
+{
+    "require": [
+        "../alpine.json"
+    ],
+    "global": {
+        "systemName": "alpine323arm",
+        "alpineVersion": "3.23",
+        "openSshVersion": "10.2"
+    },
+    "os": {
+        "imageName": "arm64v8/alpine",
+        "buildImageTag": "{{alpineVersion}}-arm",
+        "containerPlatform": "linux/arm64"
+    }
+}
