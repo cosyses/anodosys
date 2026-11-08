@@ -1,0 +1,25 @@
+{
+    "require": [
+        "../os.json"
+    ],
+    "os": {
+        "imageName": "library/alpine",
+        "imageTag": "{{alpineVersion}}",
+        "buildImageName": "cosyses/alpine",
+        "buildImageTag": "{{alpineVersion}}",
+        "buildImageEntryPoint": "tini,--,/usr/local/bin/cosyses.sh",
+        "containerCopies": [
+            "{{{{cosyses}}}}/docker/cosyses.sh:/usr/local/bin/cosyses.sh",
+            "{{{{cosyses}}}}/docker/started.sh:/usr/local/bin/started.sh",
+            "{{{{cosyses}}}}/docker/start/mount.sh:/usr/local/lib/start/00-mount.sh",
+            "{{{{cosyses}}}}/docker/start/cosyses.sh:/usr/local/lib/start/05-cosyses.sh",
+            "{{{{cosyses}}}}/docker/start/ssh.sh:/usr/local/lib/start/80-ssh.sh",
+            "{{{{cosyses}}}}/docker/stop/ssh.sh:/usr/local/lib/stop/80-ssh.sh"
+        ],
+        "containerInstallDockerScript": "{{{{cosyses}}}}/docker/software/Alpine.sh",
+        "containerInstallDockerParameters": [
+            "--openSshVersion {{openSshVersion}}"
+        ],
+        "imagePrepareContainerScript": "{{{{cosyses}}}}/image-prepare-container/alpine.sh"
+    }
+}

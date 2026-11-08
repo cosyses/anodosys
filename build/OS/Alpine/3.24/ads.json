@@ -1,0 +1,10 @@
+{
+    "require": [
+        "../alpine.json"
+    ],
+    "global": {
+        "systemName": "alpine324",
+        "alpineVersion": "3.24",
+        "openSshVersion": "10.3"
+    }
+}
