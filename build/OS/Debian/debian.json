@@ -1,0 +1,11 @@
+{
+    "require": [
+        "../linux.json"
+    ],
+    "os": {
+        "imageName": "library/debian",
+        "imageTag": "{{debianVersion}}",
+        "buildImageName": "cosyses/debian",
+        "buildImageTag": "{{debianVersion}}"
+    }
+}

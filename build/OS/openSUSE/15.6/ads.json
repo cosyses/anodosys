@@ -1,0 +1,10 @@
+{
+    "require": [
+        "../opensuse.json"
+    ],
+    "global": {
+        "systemName": "opensuse156",
+        "opensuseVersion": "15.6",
+        "openSshVersion": "9.6"
+    }
+}

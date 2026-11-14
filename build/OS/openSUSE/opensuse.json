@@ -1,0 +1,11 @@
+{
+    "require": [
+        "../linux.json"
+    ],
+    "os": {
+        "imageName": "opensuse/leap",
+        "imageTag": "{{opensuseVersion}}",
+        "buildImageName": "cosyses/opensuse",
+        "buildImageTag": "{{opensuseVersion}}"
+    }
+}

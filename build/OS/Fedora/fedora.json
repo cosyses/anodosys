@@ -1,0 +1,11 @@
+{
+    "require": [
+        "../linux.json"
+    ],
+    "os": {
+        "imageName": "library/fedora",
+        "imageTag": "{{fedoraVersion}}",
+        "buildImageName": "cosyses/fedora",
+        "buildImageTag": "{{fedoraVersion}}"
+    }
+}

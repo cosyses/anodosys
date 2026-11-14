@@ -1,0 +1,11 @@
+{
+    "require": [
+        "../linux.json"
+    ],
+    "os": {
+        "imageName": "registry.access.redhat.com/ubi{{rhelVersion}}/ubi",
+        "imageTag": "latest",
+        "buildImageName": "cosyses/rhel",
+        "buildImageTag": "{{rhelVersion}}"
+    }
+}

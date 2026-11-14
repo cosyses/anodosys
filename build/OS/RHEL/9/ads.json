@@ -1,0 +1,10 @@
+{
+    "require": [
+        "../rhel.json"
+    ],
+    "global": {
+        "systemName": "rhel9",
+        "rhelVersion": "9",
+        "openSshVersion": "9.9"
+    }
+}

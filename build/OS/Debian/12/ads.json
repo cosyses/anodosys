@@ -1,0 +1,10 @@
+{
+    "require": [
+        "../debian.json"
+    ],
+    "global": {
+        "systemName": "debian12",
+        "debianVersion": "12",
+        "openSshVersion": "9.2"
+    }
+}

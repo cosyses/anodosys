@@ -1,0 +1,10 @@
+{
+    "require": [
+        "../fedora.json"
+    ],
+    "global": {
+        "systemName": "fedora44",
+        "fedoraVersion": "44",
+        "openSshVersion": "10.2"
+    }
+}
