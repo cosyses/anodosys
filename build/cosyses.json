@@ -1,6 +1,6 @@
 {
     "require": [
-        "cosyses.local.json"
+        "{credentials}/cosyses/build.json"
     ],
     "any": {
         "repositoryUserName": "cosyses"

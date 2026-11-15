@@ -17,7 +17,7 @@ The `-arm` images are built on amd64 under QEMU from the same base images (`<rel
 
 ## Building an image
 
-The Docker Hub password goes into `build/cosyses.local.json` (copy `build/cosyses.local.json.dist`; the file is not tracked). Then build and push an image from its release directory:
+The Docker Hub password goes into `~/.anodosys/credentials/cosyses/build.json`, outside the repository (copy `credentials/build.json.dist` and `chmod 600` it). Then build and push an image from its release directory:
 
 ```sh
 cd build/OS/Debian/13
