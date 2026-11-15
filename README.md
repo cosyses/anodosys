@@ -6,7 +6,7 @@ This [Anodosys](https://github.com/anodosys/app) extension builds the Cosyses ba
 
 | Image | Releases | Base image |
 |---|---|---|
-| `cosyses/ubuntu` | 16.04, 18.04, 20.04, 22.04, 24.04, 26.04 | `ubuntu` |
+| `cosyses/ubuntu` | 16.04, 18.04, 20.04, 22.04, 24.04, 26.04 (`-arm` for 20.04, 22.04, 24.04, built outside this repository) | `ubuntu` |
 | `cosyses/alpine` | 3.23, 3.24 (also `-arm` for arm64) | `alpine`, `arm64v8/alpine` |
 | `cosyses/debian` | 12, 13 (also `-arm`) | `debian` |
 | `cosyses/rhel` | 9, 10 (also `-arm`) | `registry.access.redhat.com/ubi<release>/ubi` |
