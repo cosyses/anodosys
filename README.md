@@ -8,10 +8,12 @@ This [Anodosys](https://github.com/anodosys/app) extension builds the Cosyses ba
 |---|---|---|
 | `cosyses/ubuntu` | 16.04, 18.04, 20.04, 22.04, 24.04, 26.04 | `ubuntu` |
 | `cosyses/alpine` | 3.23, 3.24 (also `-arm` for arm64) | `alpine`, `arm64v8/alpine` |
-| `cosyses/debian` | 12, 13 | `debian` |
-| `cosyses/rhel` | 9, 10 | `registry.access.redhat.com/ubi<release>/ubi` |
-| `cosyses/fedora` | 44, 45 | `fedora` |
-| `cosyses/opensuse` | 15.6, 16.0 | `opensuse/leap` |
+| `cosyses/debian` | 12, 13 (also `-arm`) | `debian` |
+| `cosyses/rhel` | 9, 10 (also `-arm`) | `registry.access.redhat.com/ubi<release>/ubi` |
+| `cosyses/fedora` | 44, 45 (also `-arm`) | `fedora` |
+| `cosyses/opensuse` | 15.6, 16.0 (also `-arm`) | `opensuse/leap` |
+
+The `-arm` images are built on amd64 under QEMU from the same base images (`<release>-arm` directories with `containerPlatform: linux/arm64`). Docker's containerd image store keeps the platforms of a tag apart, so the arm64 pull does not replace the local amd64 base image.
 
 ## Building an image
 

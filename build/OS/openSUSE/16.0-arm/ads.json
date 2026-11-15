@@ -1,0 +1,14 @@
+{
+    "require": [
+        "../opensuse.json"
+    ],
+    "global": {
+        "systemName": "opensuse160arm",
+        "opensuseVersion": "16.0",
+        "openSshVersion": "10.0"
+    },
+    "os": {
+        "buildImageTag": "{{opensuseVersion}}-arm",
+        "containerPlatform": "linux/arm64"
+    }
+}

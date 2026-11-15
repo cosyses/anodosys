@@ -1,0 +1,14 @@
+{
+    "require": [
+        "../debian.json"
+    ],
+    "global": {
+        "systemName": "debian13arm",
+        "debianVersion": "13",
+        "openSshVersion": "10.0"
+    },
+    "os": {
+        "buildImageTag": "{{debianVersion}}-arm",
+        "containerPlatform": "linux/arm64"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "require": [
+        "../debian.json"
+    ],
+    "global": {
+        "systemName": "debian12arm",
+        "debianVersion": "12",
+        "openSshVersion": "9.2"
+    },
+    "os": {
+        "buildImageTag": "{{debianVersion}}-arm",
+        "containerPlatform": "linux/arm64"
+    }
+}

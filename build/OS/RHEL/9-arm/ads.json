@@ -1,0 +1,14 @@
+{
+    "require": [
+        "../rhel.json"
+    ],
+    "global": {
+        "systemName": "rhel9arm",
+        "rhelVersion": "9",
+        "openSshVersion": "9.9"
+    },
+    "os": {
+        "buildImageTag": "{{rhelVersion}}-arm",
+        "containerPlatform": "linux/arm64"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "require": [
+        "../fedora.json"
+    ],
+    "global": {
+        "systemName": "fedora44arm",
+        "fedoraVersion": "44",
+        "openSshVersion": "10.2"
+    },
+    "os": {
+        "buildImageTag": "{{fedoraVersion}}-arm",
+        "containerPlatform": "linux/arm64"
+    }
+}
