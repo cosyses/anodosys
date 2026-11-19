@@ -2,6 +2,14 @@
 
 This [Anodosys](https://github.com/anodosys/app) extension builds the Cosyses base images and provides the init system they use. The images have [Cosyses](https://github.com/cosyses/app) preinstalled, plus OpenSSH and Tini installed with Cosyses, use Tini as entrypoint and run `cosyses update` on start.
 
+## Installation
+
+```bash
+ads extension install cosyses
+```
+
+The extension is listed in the public [Anodosys registry](https://github.com/anodosys/registry). Its versions are the tags of this repository; `extension.json` names it and lists what it requires. A new version is released by tagging it (`git tag 1.1.0 && git push origin 1.1.0`), and `ads extension update` installs it.
+
 ## Images
 
 | Image | Releases | Base image |

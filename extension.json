@@ -1,0 +1,4 @@
+{
+  "name": "cosyses",
+  "description": "Cosyses base images (Ubuntu, Alpine, Debian, RHEL, Fedora, openSUSE) with Cosyses preinstalled"
+}
